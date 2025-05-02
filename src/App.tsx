@@ -83,6 +83,7 @@ import UpdateRoles from './Admin_Panel/Page_Components/Roles/UpdateRoles'
 import Admin_Login from "./Admin_Panel/Page/Admin_Login";
 import ScrollTop from "./scrollUp";
 import ProgressBar from "./loadBar";
+import HelpCenter from "./Admin_Panel/Page_Components/Sidebar/HelpCenter";
 // import ProtectedRoute from "./protectedRoute";
 
 const App = () => {
@@ -166,6 +167,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/BecomeMember" element={<Become_Member_Form />} />
           <Route path="/contact-us" element={<ContactUs />} />
+          <Route path="/help-center" element={<HelpCenter />} />
           {/* <Route path="/openings/:id" element={<Openings />} /> */}
           <Route path="/roles" element={<Roles />} />
           <Route path="/coordinators" element={<Coordinators />} />

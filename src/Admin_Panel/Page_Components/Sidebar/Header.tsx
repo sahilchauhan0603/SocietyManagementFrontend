@@ -121,9 +121,9 @@ const Header = () => {
             className="h-12 transition-transform duration-300 group-hover:scale-105"
             alt="BPIT Logo"
           />
-          <span className="text-xl font-bold text-gray-800 hidden md:inline-block">
+          {/* <span className="text-xl font-bold text-gray-800 hidden md:inline-block">
             Admin Dashboard
-          </span>
+          </span> */}
         </Link>
 
         {/* User Controls */}
@@ -147,10 +147,10 @@ const Header = () => {
           {showDropdown && (
             <div className="absolute right-0 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none transition-opacity duration-100">
               <div className="py-1">
-                <div className="px-4 py-2 text-sm text-gray-700 border-b">
+                {/* <div className="px-4 py-2 text-sm text-gray-700 border-b">
                   <p className="font-medium">Admin User</p>
                   <p className="text-gray-500 text-xs">Administrator</p>
-                </div>
+                </div> */}
 
                 <Link
                   to="/help-center"

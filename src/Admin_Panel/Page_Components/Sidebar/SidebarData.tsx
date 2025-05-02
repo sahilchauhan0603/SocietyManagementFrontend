@@ -61,16 +61,4 @@ export const SidebarData = [
     icon: <Users />,
     cName: 'nav-text'
   },
-  // {
-  //   title: 'Contact Us',
-  //   path: '/contact-us',
-  //   icon: <Contact />,
-  //   cName: 'nav-text'
-  // },
-  // {
-  //   title: 'Logout',
-  //   path: '/',
-  //   icon: <LogOut/>,
-  //   cName: 'nav-text'
-  // },
 ];

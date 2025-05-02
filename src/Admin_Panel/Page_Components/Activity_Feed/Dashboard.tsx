@@ -284,14 +284,14 @@ const Dashboard = () => {
                 <span className="text-sm font-medium">Manage Events</span>
               </Link>
               <Link 
-                to="/members" 
+                to="/becomemember" 
                 className="p-4 border rounded-lg hover:bg-gray-50 transition-colors flex flex-col items-center"
               >
                 <Users className="h-8 w-8 text-green-500 mb-2" />
-                <span className="text-sm font-medium">View Members</span>
+                <span className="text-sm font-medium">View Member Joining Form</span>
               </Link>
               <Link 
-                to="/news" 
+                to="/all-news" 
                 className="p-4 border rounded-lg hover:bg-gray-50 transition-colors flex flex-col items-center"
               >
                 <Newspaper className="h-8 w-8 text-blue-500 mb-2" />
