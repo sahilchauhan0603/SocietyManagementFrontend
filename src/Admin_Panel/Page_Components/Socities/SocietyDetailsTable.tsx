@@ -189,7 +189,7 @@ const SocietyDetailsTable = () => {
   const [filterType, setFilterType] = useState<string>("All");
   const params = useParams();
 
-  const societyTypes = ["All", "Tech", "Non-Tech", "Cultural", "Sports"];
+  const societyTypes = ["All", "Technical", "Non-Technical", "Cultural", "Sports"];
 
   useEffect(() => {
     const fetchAllSociety = async () => {
@@ -259,7 +259,7 @@ const SocietyDetailsTable = () => {
           <h1 className="text-2xl md:text-3xl font-bold text-gray-800">Societies Management</h1>
           <p className="text-gray-600">View and manage all registered societies</p>
         </div>
-        <Link to="/admin/society/add">
+        <Link to="/create">
           <Button className="bg-blue-600 hover:bg-blue-700 text-white">
             <PlusCircle className="mr-2 h-4 w-4" />
             Add New Society
@@ -301,23 +301,23 @@ const SocietyDetailsTable = () => {
         <Table className="min-w-full">
           <TableHeader className="bg-gray-50">
             <TableRow>
-              <TableHead className="w-[100px]">ID</TableHead>
-              <TableHead>Society Name</TableHead>
-              <TableHead className="hidden md:table-cell">
+              <TableHead className="w-[50px]">ID</TableHead>
+              <TableHead className="min-w-[150px]">Society Name</TableHead>
+              <TableHead className="min-w-[120px]">
                 <div className="flex items-center gap-1">
                   <Calendar className="h-4 w-4" />
                   Established
                 </div>
               </TableHead>
-              <TableHead className="hidden lg:table-cell">Description</TableHead>
+              <TableHead className="min-w-[300px]">Description</TableHead>
               <TableHead>
                 <div className="flex items-center gap-1">
                   <User className="h-4 w-4" />
                   Head
                 </div>
               </TableHead>
-              <TableHead>Type</TableHead>
-              <TableHead>Actions</TableHead>
+              <TableHead className="min-w-[100px]">Type</TableHead>
+              <TableHead className="w-[120px]">Actions</TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>
@@ -334,7 +334,7 @@ const SocietyDetailsTable = () => {
                   <TableCell className="hidden md:table-cell">
                     {format(new Date(society.DateOfRegistration), "MMMM dd, yyyy")}
                   </TableCell>
-                  <TableCell className="hidden lg:table-cell text-gray-600 max-w-xs truncate">
+                  <TableCell className="text-gray-600 max-w-prose whitespace-normal">
                     {society.SocietyDescription}
                   </TableCell>
                   <TableCell>{society.SocietyHead}</TableCell>
