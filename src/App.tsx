@@ -84,6 +84,8 @@ import Admin_Login from "./Admin_Panel/Page/Admin_Login";
 import ScrollTop from "./scrollUp";
 import ProgressBar from "./loadBar";
 import HelpCenter from "./Admin_Panel/Page_Components/Sidebar/HelpCenter";
+import SettingsPage from "./Admin_Panel/Page_Components/Sidebar/SettingsPage";
+import ContactMessagesPage from "./Admin_Panel/Page_Components/Sidebar/ContactMessagesPage";
 // import ProtectedRoute from "./protectedRoute";
 
 const App = () => {
@@ -120,6 +122,8 @@ const App = () => {
         <Route path="/admin/society" element={<Admin_Society />} />
         <Route path="/admin/society/:societyID" element={<Admin_Society />} />
         <Route path="/admin/society/update/:societyId" element={<UpdateSociety/>}/>
+        <Route path="/admin/settings" element={<SettingsPage />} />
+        <Route path="/admin/contact" element={<ContactMessagesPage />} />
 
         <Route path="/admin/testimonials" element={<Admin_Testimonials />} />
         <Route path="/admin/testimonials/:societyID" element={<Admin_Testimonials />} />
