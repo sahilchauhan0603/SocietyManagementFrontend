@@ -26,29 +26,6 @@ const schema = z.object({
   TwitterProfile: z.string().url().optional(),
 });
 
-// const TypewriterText = ({ text, speed }: { text: string; speed: number }) => {
-//   const [displayedText, setDisplayedText] = useState("");
-//   const [index, setIndex] = useState(0);
-
-//   useEffect(() => {
-//     const type = () => {
-//       if (index < text.length) {
-//         setDisplayedText((prev) => prev + text[index]);
-//         setIndex((prevIndex) => prevIndex + 1);
-//       } else {
-//         setTimeout(() => {
-//           setDisplayedText("");
-//           setIndex(0);
-//         }, 2000);
-//       }
-//     };
-//     const timer = setTimeout(type, speed);
-//     return () => clearTimeout(timer);
-//   }, [index, text, speed]);
-
-//   return <span>{displayedText}</span>;
-// };
-
 const branches = ["CSE", "IT", "CSE-DS", "ECE", "EEE"];
 
 const batches = [
