@@ -78,6 +78,9 @@ const config = {
         "accordion-up": "accordion-up 0.2s ease-out",
         'marquee': 'marquee 20s linear infinite',
       },
+      fontFamily: {
+        sans: ['Arial', 'Helvetica', 'sans-serif'], // default sans
+      },
     },
   },
   plugins: [tailwindcssAnimate],
