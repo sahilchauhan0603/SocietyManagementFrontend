@@ -1,4 +1,4 @@
-.navbar {
+/* .navbar {
     background-color:white;
     height: 80px;
     display: flex;
@@ -28,7 +28,6 @@
     width:250px;
     left: 0px;
     transition: 350ms;
-    /* background-color: #1a83ff; */
 
   }
   .linktext{
@@ -60,7 +59,7 @@
   }
   
   .nav-text a:hover, .nav-text a.active {
-    background-color: #1a83ff; /* Keep the hover effect */
+    background-color: #1a83ff; 
   }
   
   .nav-menu-items {
@@ -101,4 +100,74 @@
 .options{
   background-color: #e2e2e2;
   z-index:1;
+} */
+
+
+/* Base styles */
+.nav-menu {
+  transition: width 0.3s ease, transform 0.3s ease;
+}
+
+/* Smooth transitions for all child elements */
+.nav-menu * {
+  transition: opacity 0.2s ease, color 0.2s ease, background-color 0.2s ease;
+}
+
+/* Active link styles */
+.nav-text a.active {
+  position: relative;
+}
+
+.nav-text a.active::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 60%;
+  background-color: #3b82f6;
+  border-radius: 2px 0 0 2px;
+}
+
+/* Submenu animation */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.submenu {
+  animation: slideDown 0.3s ease forwards;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .nav-menu {
+    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+}
+
+/* Scrollbar styling */
+.nav-menu::-webkit-scrollbar {
+  width: 4px;
+}
+
+.nav-menu::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.nav-menu::-webkit-scrollbar-thumb {
+  background: #4b5563;
+  border-radius: 2px;
+}
+
+.nav-menu::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
 }

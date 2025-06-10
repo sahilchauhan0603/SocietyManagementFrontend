@@ -1,5 +1,7 @@
+import tailwindcssAnimate from "tailwindcss-animate";
+
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+const config = {
   darkMode: ["class"],
   content: [
     './pages/**/*.{ts,tsx}',
@@ -14,7 +16,6 @@ module.exports = {
       padding: "2rem",
       screens: {
         "2xl": "1400px",
-        
       },
     },
     extend: {
@@ -77,7 +78,12 @@ module.exports = {
         "accordion-up": "accordion-up 0.2s ease-out",
         'marquee': 'marquee 20s linear infinite',
       },
+      fontFamily: {
+        sans: ['Arial', 'Helvetica', 'sans-serif'], // default sans
+      },
     },
   },
-  plugins: [require("tailwindcss-animate")],
-}
+  plugins: [tailwindcssAnimate],
+};
+
+export default config;

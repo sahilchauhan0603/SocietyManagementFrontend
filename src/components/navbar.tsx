@@ -26,10 +26,10 @@ const routeList = [
     label: "Home",
   },
 
-  {
-    href: "/vision",
-    label: "Our Vision",
-  },
+  // {
+  //   href: "/vision",
+  //   label: "Our Vision",
+  // },
   {
     href: "/BecomeMember",
     label: "Join a Society",
